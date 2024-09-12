@@ -8,8 +8,14 @@
 public class CivVTest
 
 {
-    // All tests assume Tile constructor takes food, production, gold in that order
 
+    /**
+     * Tests the resource generation for the city of Amsterdam. The test initializes the city with 
+     * a specific population, grid of tiles, and worked tiles. It checks if the generated food, 
+     * production, and gold match the expected values.
+     * 
+     * @return true if the generated food, production, and gold match the expected values; false otherwise
+     */
     public boolean amsterdamTest() {
     	
     	int pop = 64;
@@ -40,7 +46,13 @@ public class CivVTest
     }
 	
 	
-	
+	/**
+     * Tests the resource generation for the city of Philadelphia (Philly). The test initializes 
+     * the city with a specific population, grid of tiles, and worked tiles. It checks if the generated 
+     * food, production, and gold match the expected values.
+     * 
+     * @return true if the generated food, production, and gold match the expected values; false otherwise
+     */
     public boolean phillyTest()
     {
         int pop = 12;
@@ -66,7 +78,13 @@ public class CivVTest
         return philly.getGeneratedFood() == 27 && philly.getGeneratedProd() == 29 && philly.getGeneratedGold() == 13;
     }
     
- 
+     /**
+     * Tests the resource generation for the city of Berlin. The test initializes the city with 
+     * a specific population, grid of tiles, and worked tiles. It checks if the generated food, 
+     * production, and gold match the expected values.
+     * 
+     * @return true if the generated food, production, and gold match the expected values; false otherwise
+     */
     public boolean berlinTest()
     {
         int pop = 14;
@@ -92,6 +110,14 @@ public class CivVTest
         return berlin.getGeneratedFood() == 36 && berlin.getGeneratedProd() == 32 && berlin.getGeneratedGold() == 25;
     }
     
+
+    /**
+     * Tests the resource generation for the city of Delhi. The test initializes the city with 
+     * a specific population, grid of tiles, and worked tiles. It checks if the generated food, 
+     * production, and gold match the expected values.
+     * 
+     * @return true if the generated food, production, and gold match the expected values; false otherwise
+     */
     public boolean delhiTest()
     {
         int pop = 45;
